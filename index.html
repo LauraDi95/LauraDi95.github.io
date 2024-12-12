@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN Bootstrap header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CDN bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/code-slash.svg">
+
+  <!-- estilos css -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico">
+  <title>Diana Laura VJ</title>
+</head>
+
+<body>
+  <!-- header de bootstrap -->
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+      <!-- imagen de poder digital usado como logo-->
+      <img src="/assets/teclado.png" alt="">
+
+      <span class="fs-4">Laura Di VJ 💻</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a id="boton-perfil" href="#" class="nav-link active" aria-current="page">Sobre mí</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Formación</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+    </ul>
+  </header>
+
+
+  <!-- el contenido importante -->
+  <main>
+
+    <!-- agegamos un div para el hero -->
+    <div class="hero">
+      <!-- apartado de presentación de bootstrap traido de examples heroes, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="./assets/diana.png" width="220">
+        <!-- clase rounded-circle para hacer la img redondita, se coloca antes del src-->
+
+
+        <h1 class="display-4 fw-bold text-body-emphasis">Diana Laura VJ</h1>
+
+        <!-- texto Typewriter  definido en java script-->
+        <h2 id="app"></h2>
+        <div class="col-lg-6 mx-auto">
+          <!-- parrafo de presentación -->
+          <p class="lead mb-4">Diseñadora web junior, apasionada por crear espacios interactivos y visualmente
+            atractivos
+            para una agradable experiencia de usuario. Fan de poner atención a los detalles y mucha magia digital para
+            compartir con el mundo.🌎
+          </p>
+          <div class="d-grid gap-2 d-dm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">¡Hola mundo!✨👩‍💻</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- apartado de presentación de bootstrap traido de examples features, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
+    <div class="habilidades container px-4 py-5" id="hanging-icons">
+      <h3 class="pb-2 border-bottom">Habilidades</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+              <i class="bi bi-pc-display-horizontal"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Desarrollo Frontend</h3>
+              <p>He creado sitios web funcionales, interactivos, responsivos y visualmente atractivos para la
+                experiencia de usuario, aplicando los conocimientos adquiridos al ser becaria del programa de Mujer
+                Digital de Junior Achievement México y durante el bootcamp de
+                Tecnolochicas PRO-Fundación Televisa</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg> -->
+              <i class="bi bi-image"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Diseñadora web</h3>
+              <p>Me he preparado el área de diseño web profesional y marketing digital, tomando diversos cursos que
+                enriquecen mis conocimientos para brindar armonía visual en colores, tipografias, formas,estilos que
+                definan una identidad y branding para el posisionamiento de marca.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg> -->
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Estudiante</h3>
+              <p>Recien ingresada en la Ingenieria en Desarrollo de Software en la UnADM (Universidad Abierta y a
+                Distancia de México-SEP) , tras haber concluido el proceso de selección y admisión de la convocatoria
+                del 2024.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- apartado de galeria proyectos de bootstrap traido de examples features, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
+    <div class="proyectos container mt-5">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card  shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./assets/vanGogh.png"><text>Sitio inspirado en van
+              Gogh</text></img>
+            <div class="card-body">
+              <p class="card-text">Mi primera páctica de un sitio web en el programa Tecnolochicas Pro.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://oh-van-gogh.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/LauraDi95/Vincent-van-Gogh ">GitHub</a></button>
+                </div>
+                <small class="text-body-secondary">HTML YCSS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./assets/ClonPinterest.png"><text>Clon de
+              Pinteres</text></img>
+            <div class="card-body">
+              <p class="card-text">Segunda actividad en Tecnoilochicas Pro realizando clon del sitio web de Pinterest
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">Ver<a target="_blank"
+                      href="https://pinterest-clon-pearl.vercel.app/"></a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/LauraDi95/pinterest-clon">GitHub</a></button>
+                </div>
+                <small class="text-body-secondary">HTML, CSS, JAVASCRIPT</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./assets/ClonPinterest.png"><text>Thumbnail</text></img>
+            <div class="card-body">
+              <p class="card-text"> Proyecto Final de Tecnolochicas Pro usando Java Scrip.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://pinterest-clon-pearl.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/LauraDi95/pinterest-clon">GitHub</a></button>
+                </div>
+                <small class="text-body-secondary">HTML, CSS, JAVASCRIPT</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- carrusel de testimonios -->
+    <div class="testimonios">
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <!-- inicia contenedor Anel -->
+            <div class="d-flex justify-content-center">
+              <!-- inicio de card -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/Anel Montes.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Diana Laura muestra un rápido progreso en la adquisición de habilidades
+                    técnicas
+                    clave y una gran disposición para colaborar en proyectos. Su actitud positiva y su voluntad de
+                    aprender constantemente son cualidades valiosas en el campo de la programación. No tengo dudas
+                    de
+                    que Diana Laura seguirá creciendo y haciendo contribuciones significativas como
+                    desarrolladora frontend en el futuro. Anel Montes</p>
+                </div>
+              </div>
+            </div>
+            <!-- fin card -->
+          </div>
+          <!-- termina contenedor -->
+
+          <!-- inicia contenedor testimonio 1-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- inicio de card -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/testimonio1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">He tenido la oportunidad de ver el trabajo de Diana Laura como programadora y
+                    realmente me ha impresionado. Sus habilidades técnicas y su capacidad para desarrollar soluciones
+                    efectivas son notables. Siempre entrega proyectos bien estructurados y de alta calidad. Es una
+                    profesional comprometida y confiable, y sin duda su trabajo habla por sí mismo. Ana Paula Gutiérrez Vélez</p>
+                </div>
+              </div>
+            </div>
+            <!-- fin de card -->
+          </div>
+          <!-- termina contenedor -->
+
+          <!-- inicia contenedor testimonio 2-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- inicio de card -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/testimonio2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Tuve la gran oportunidad de compartir con Diana Laura en el bootcamp de
+                    Technolochicas Pro. Sin duda alguna, demostró ser una excelente desarrolladora front-end, con una
+                    notable facilidad de aprendizaje y destacando por sus magníficos diseños. Fue un placer conocerle, y
+                    espero seguir de cerca sus futuras creaciones. El futuro que le espera es asombroso. Araceli Gonzalez Luna</p>
+                </div>
+              </div>
+            </div>
+            <!-- fin d ecard -->
+          </div>
+          <!-- termina contenedor -->
+
+          <!-- inia contenedor testimonio 3 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- inicio de card -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/testimonio3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Como compañera de Diana Laura durante el Bootcamp de Techonolochicas Pro, considero
+                    que es una persona dedicada y atenta que busca mejorar sus habilidades como desarrolladora Frontend.
+                    Seguramente, debido a su desempeño, se convertirá en una profesional exitosa. María del Rayo Ponce Vargas</p>
+                </div>
+              </div>
+            </div>
+            <!-- fin d ecard -->
+          </div>
+          <!-- termina contenedor -->
+
+          <!-- inia contenedor testimonio 4 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- inicio de card -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/testimonio4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Compartí espacio con Diana Laura durante el Bootcamp de Tecnolochicas PRO y
+                      demostró habilidades, compromiso y creatividad. Siempre abierta a aprender cosas nuevas y
+                      aplicarlas en su práctica profesional. Isis IT (Izaguirre Toscano)</p>
+                </div>
+              </div>
+            </div>
+            <!-- fin d ecard -->
+          </div>
+          <!-- termina contenedor -->
+
+          <!-- inia contenedor testimonio 5 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- inicio de card -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/testimonio5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Tuve el privilegio de haber compartido con [tu nombre], en el bootcamp de
+                    Tecnolochicas Pro. Y me complace decir que Diana Laura es una persona excepcional con muchas ganas
+                    de aprender, superarse a si misma y desarrollar sus habilidades de programadora a otro nivel.
+                    Además es una persona que ha demostrado ser muy cumplida, comprometida y confiable en sus proyectos.
+                    Atte: Dayana Pacheco</p>
+                </div>
+              </div>
+            </div>
+            <!-- fin d ecard -->
+          </div>
+          <!-- termina contenedor -->
+
+
+
+          <!-- botones -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+  </main>
+
+  <!-- CDN JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- CDN typ writer- texto escribiendosec:\Users\diana\OneDrive\IMAGENES EXTRA\Diana.jpg -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+
+  <!-- ligar main.js despues de leer la libreria de typewriter-->
+  <script src="./main.js"></script>
+</body>
+
+</html>

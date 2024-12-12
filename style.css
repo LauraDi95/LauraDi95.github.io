@@ -1,0 +1,78 @@
+* {
+    font-family: "Parkinsans";
+}
+
+/* codigo del sitio coolors.co-degradados y gradiente */
+body {
+    background: hsla(229, 51%, 50%, 1);
+
+    background: linear-gradient(90deg, rgba(62, 86, 193, 0.89) 0%, hsla(310, 76%, 82%, 1) 50%, rgba(255, 102, 196, 0.616) 100%);
+
+    background: -moz-linear-gradient(90deg, rgba(62, 86, 193, 0.877) 0%, hsla(310, 76%, 82%, 1) 50%, rgba(255, 102, 196, 0.486) 100%);
+
+    background: -webkit-linear-gradient(90deg, rgba(62, 86, 193, 0.863) 0%, hsla(310, 76%, 82%, 1) 50%, rgba(255, 102, 196, 0.534) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3E56BF", endColorstr="#f4afe9", GradientType=1 );
+}
+
+header {
+    background-image: url(assets/header.jpg);
+    height: 90px;
+}
+
+/* Nombre en header */
+header a span {
+    color: white;
+    border: solid 2px;
+    border-radius: 20px;
+    border-color: #ff66c4;
+    background-color: rgba(255, 255, 255, 0.438);
+    padding: 5px;
+    margin-left: 35px;
+}
+
+/* imagen teclado */
+header img {
+    height: 70px;
+    margin-left: 25px;
+}
+
+/* id app efecto escribiendo */
+#app {
+    color: #3e56bf;
+}
+
+
+h1 {
+    color: #ff66c4;
+}
+
+.nav .item a {}
+
+
+
+.boton-cv {}
+
+.habilidades {
+    background-image: url(../ClonPinterest/assets-img/favicon.ico);
+}
+
+.btn-proyecto {
+    background-color: #C5B3E3;
+}
+
+.btn-proyecto a {
+    text-decoration: none;
+    color: #C5B3E3
+}
+
+.card .card-tittle {
+    color: #E6C07B;
+}
+
+#contacto {
+    background-color: #C5B3E3;
+    color: #E6C07B;
+}
+
+#contacto
