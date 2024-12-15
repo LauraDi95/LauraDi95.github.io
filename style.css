@@ -1,5 +1,6 @@
 * {
-    font-family: "Parkinsans";
+    /* nombre de la fuente de google fonts */
+    font-family: "Sour Gummy", sans-serif;
 }
 
 /* codigo del sitio coolors.co-degradados y gradiente */
@@ -15,8 +16,10 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3E56BF", endColorstr="#f4afe9", GradientType=1 );
 }
 
+/* encabezado */
 header {
     background-image: url(assets/header.jpg);
+    background-repeat: repeat-x 3;
     height: 90px;
 }
 
@@ -37,42 +40,155 @@ header img {
     margin-left: 25px;
 }
 
+
+/* barra de navegación-enlaces color, margen, hover */
+.nav{
+    gap: 15px;
+    margin-right: 70px;
+}
+.nav-item {
+    margin-top: 20px; 
+}
+.nav-item a{
+    color: white;
+    padding: 5px;
+}
+.nav-item a:hover{
+    color: white;
+    background-color: #ff66c4a8;
+}
+
+/* sección sobre mi */
+
+
 /* id app efecto escribiendo */
 #app {
-    color: #3e56bf;
+    color: #2045e9;
 }
 
-
+/* color del nombre */
 h1 {
-    color: #ff66c4;
+    color: #ff3cb4;
 }
 
-.nav .item a {}
 
-
-
-.boton-cv {}
-
-.habilidades {
-    background-image: url(../ClonPinterest/assets-img/favicon.ico);
+ /* enlace al curriculum pdf */
+.boton-cv{
+ background-color: #4e6cf5;
+ color: white;
+ border: solid 1px #2045e96e;
+}
+.boton-cv:hover{
+    color: white;
+    border: solid 2px #ff66c4;
+    background-color: #4e6cf5;
 }
 
-.btn-proyecto {
-    background-color: #C5B3E3;
+
+/* agregramos un div para cambiar el color de esa area */
+.caja-habilidades{
+    background-color: #0329d12f;
+}
+h3{
+    font-size: 36px;
+    color: #0329d1;
+}
+ /* color de los iconos de seccion habilidades */
+.caja-habilidades i{
+    color: #ff3cb4;
 }
 
+.proyectos .border-bottom{
+    border-bottom: solid 5px white;
+}
+
+/* borde en las card de testimonios */
+.testimonios .card{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border: solid 2px #ff66c4;
+    padding: 20px;
+    width: 400px;
+} 
+.carrusel-item {
+    width: 500px;
+}
+
+.proyectos text{
+    text-align: center;
+    color: #ff3cb4;
+    font-size:x-large;
+}
+
+/* vercel */
 .btn-proyecto a {
     text-decoration: none;
-    color: #C5B3E3
+    color: black
+}
+.btn-proyecto {
+    background-color: #C5B3E3;
+    border: solid 1px #4e6cf5;
 }
 
+.btn-proyecto:hover {
+    background-color: #ff66c4;
+}
+
+/* github */
+.btn-codigo{
+    background-color: #C5B3E3;
+    border: solid 1px #4e6cf5;
+}
+.btn-codigo:hover{
+    background-color: #ff66c4;
+}
+
+.btn-codigo a {
+    text-decoration: none;
+    color: black
+}
+/* titulo de las card de proyectos */
 .card .card-tittle {
-    color: #E6C07B;
+    color: #ff3cb4;
 }
 
 #contacto {
     background-color: #C5B3E3;
-    color: #E6C07B;
+    color: #ff3cb4;
 }
 
-#contacto
+/* pie de pagina contenedor de iconos*/
+footer .nav{
+    width: 100%;
+}
+
+
+/* iconos */
+footer i{
+    color: white;
+    font-size: xx-large;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #ff66c4;
+}
+
+
+footer i:hover{
+    color: #0329d1;
+    background-color: rgba(255, 255, 255, 0.562)
+}
+
+
+footer .nav-link:hover{
+    background-color: #0329d100;
+}
+
+
+/* pie de pagina parrafo y link para sitio de tecnolochicas */
+footer p{
+    color: black;
+}
+footer .link-techpro{
+    color: white;
+}

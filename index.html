@@ -12,6 +12,12 @@
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/code-slash.svg">
 
+  <!-- link de google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <!-- estilos css -->
   <link rel="stylesheet" href="./style.css">
   <!-- favicon -->
@@ -26,15 +32,17 @@
       <!-- imagen de poder digital usado como logo-->
       <img src="/assets/teclado.png" alt="">
 
-      <span class="fs-4">Laura Di VJ 💻</span>
+      <span class="fs-4">Laura Di VJ 💻 ¡Hola mundo!</span>
     </a>
 
     <ul class="nav nav-pills">
-      <li class="nav-item"><a id="boton-perfil" href="#" class="nav-link active" aria-current="page">Sobre mí</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Formación</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+      <!-- agregamos clase boton-perfil para cambiar en css el color del enlace de perfil -->
+      <li class="nav-item"><a id="boton-perfil" href="#app" class="nav-link active perfil" aria-current="page">Sobre mí</a>
+      </li>
+      <li class="nav-item"><a href="#hanging-icons" class="nav-link">Habilidades</a></li>
+      <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
+      <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
     </ul>
   </header>
 
@@ -45,12 +53,12 @@
     <!-- agegamos un div para el hero -->
     <div class="hero">
       <!-- apartado de presentación de bootstrap traido de examples heroes, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
-      <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <img class="d-block mx-auto mb-4 rounded-circle" src="./assets/diana.png" width="220">
+      <div class="px-4 pt-1 my-1 text-center">
+        <img class="d-block mx-auto mb-1 rounded-circle" src="./assets/diana.png" width="320">
         <!-- clase rounded-circle para hacer la img redondita, se coloca antes del src-->
 
 
-        <h1 class="display-4 fw-bold text-body-emphasis">Diana Laura VJ</h1>
+        <h1 class="display-4 fw-bold">Diana Laura VJ</h1>
 
         <!-- texto Typewriter  definido en java script-->
         <h2 id="app"></h2>
@@ -62,23 +70,23 @@
             compartir con el mundo.🌎
           </p>
           <div class="d-grid gap-2 d-dm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">¡Hola mundo!✨👩‍💻</button>
+            <button type="button" class="btn btn-lg p-1 boton-cv">Link a CV</button>
           </div>
         </div>
       </div>
     </div>
 
-
-
-    <!-- apartado de presentación de bootstrap traido de examples features, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
-    <div class="habilidades container px-4 py-5" id="hanging-icons">
-      <h3 class="pb-2 border-bottom">Habilidades</h2>
+    <!-- comienza sección de habilidades -->
+    <div class="caja-habilidades">
+      <!-- apartado de presentación de bootstrap traido de examples features, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
+      <div class="habilidades container px-4 py-5" id="hanging-icons">
+        <h3 class="pb-3 border-bottom">Habilidades</h3>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
 
           <div class="col d-flex align-items-start">
             <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
               <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
               <i class="bi bi-pc-display-horizontal"></i>
             </div>
@@ -92,7 +100,7 @@
           </div>
           <div class="col d-flex align-items-start">
             <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
               <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg> -->
               <i class="bi bi-image"></i>
             </div>
@@ -105,7 +113,7 @@
           </div>
           <div class="col d-flex align-items-start">
             <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
               <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg> -->
               <i class="bi bi-award-fill"></i>
             </div>
@@ -117,26 +125,26 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
 
 
 
-
     <!-- apartado de galeria proyectos de bootstrap traido de examples features, inspeccionar, click derecho a la parte correcta selleccionado que envuelve todo el estilo, copy, copy element -->
-    <div class="proyectos container mt-5">
-
+    <div id="proyectos" class="proyectos container mt-5">
+      <h3 class="pb-3 border-bottom mb-5">Proyectos</h3>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card  shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="./assets/vanGogh.png"><text>Sitio inspirado en van
+            <img class="bd-placeholder-img card-img-top" src="./assets/vanGogh.png"><text>Vincent van
               Gogh</text></img>
             <div class="card-body">
               <p class="card-text">Mi primera páctica de un sitio web en el programa Tecnolochicas Pro.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-proyecto"><a target="_blank"
                       href="https://oh-van-gogh.vercel.app/">Ver</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                  <button type="button" class="btn btn-sm  btn-proyecto"><a target="_blank"
                       href="https://github.com/LauraDi95/Vincent-van-Gogh ">GitHub</a></button>
                 </div>
                 <small class="text-body-secondary">HTML YCSS</small>
@@ -150,13 +158,13 @@
             <img class="bd-placeholder-img card-img-top" src="./assets/clonPinterest.png"><text>Clon de
               Pinteres</text></img>
             <div class="card-body">
-              <p class="card-text">Segunda actividad en Tecnoilochicas Pro realizando clon del sitio web de Pinterest
+              <p class="card-text">Segunda actividad en Tecnolochicas realizando clon de Pinterest
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">Ver<a target="_blank"
+                  <button type="button" class="btn btn-sm btn-proyecto">Ver<a target="_blank"
                       href="https://pinterest-clon-pearl.vercel.app/"></a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-proyecto"><a target="_blank"
                       href="https://github.com/LauraDi95/pinterest-clon">GitHub</a></button>
                 </div>
                 <small class="text-body-secondary">HTML, CSS, JAVASCRIPT</small>
@@ -168,14 +176,14 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="./assets/ClonPinterest.png"><text>Thumbnail</text></img>
+            <img class="bd-placeholder-img card-img-top" src="./assets/ClonPinterest.png"><text>Gestión de tareas</text></img>
             <div class="card-body">
               <p class="card-text"> Proyecto Final de Tecnolochicas Pro usando Java Scrip.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-proyecto"><a target="_blank"
                       href="https://pinterest-clon-pearl.vercel.app/">Ver</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-codigo"><a target="_blank"
                       href="https://github.com/LauraDi95/pinterest-clon">GitHub</a></button>
                 </div>
                 <small class="text-body-secondary">HTML, CSS, JAVASCRIPT</small>
@@ -188,7 +196,9 @@
 
 
     <!-- carrusel de testimonios contenedor de todo el carrusel -->
-    <div class="testimonios">
+    <!-- clase testimonios, container y margin top de 5 -->
+    <div class="testimonios container mt-5">
+      <h3 id="testimonios" class="pb-2 border-bottom">Testimonios</h3>
       <!-- codigo traido de bootstrap con el estilo elegido de carrusel -->
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
@@ -258,6 +268,7 @@
           <!-- termina contenedor -->
 
           <!-- inia contenedor testimonio 3 -->
+          <!-- la clase p-x es el padding de izquierda y derecha, si fuera p-y sería padding de arriba y abajoa -->
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
               <!-- inicio de card -->
@@ -297,7 +308,7 @@
           </div>
           <!-- termina contenedor -->
 
-          <!-- inia contenedor testimonio 5 -->
+          <!-- inicia contenedor testimonio 5 -->
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
               <!-- inicio de card -->
@@ -336,16 +347,16 @@
     </div>
 
     <!-- aoartado de contacto -->
-    <div class="px-4 py-5 my-5 text-center">
+    <div id="contacto" class="px-4 py-5 my-5 text-center">
       <i class="d-block mx-auto mb-4 fs-1 bi bi-chat-heart"></i>
       <h1 class="display-5 fw-bold text-body-emphasis">¡Contáctame!</h1>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Iniciemos un nuevo proyecto 💻✨🌐</p>
+        <p class="lead mb-4">Iniciemos un nuevo proyecto</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          
+
           <!-- ejemplo de correo personalizado con mas de un destinatario asunto y cuerpo de texo, traido de https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_mailto_subject -->
-          <!-- <a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!" -->
-            <!-- target="_top">Send mail!</a> -->
+          <!-- <a href="mailto:lauradivj@gmail.com"?&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!" -->
+          <!-- target="_top">Send mail!</a> -->
           <!-- </p> -->
           <!-- <p>The link will only work if you have email installed.</p> -->
           <!-- <p>(Spaces between words should be replaced by %20 to ensure that the browser will display the text properly) -->
@@ -360,18 +371,27 @@
   </main>
 
   <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-slack"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-discord"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-whatsapp"></i></a></li>
+    <ul class="nav justify-content-center pb-3 mb-3">
+      <li class="nav-item"><a target="_blank" href="https://github.com/LauraDi95"
+          class="nav-link px-2"><i class="bi bi-github"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://www.linkedin.com/in/dianalauravj95"
+          class="nav-link px-2"><i class="bi bi-linkedin"></i></a></li>
+      <li class="nav-item"><a target="_blank"
+          href="https://join.slack.com/t/proyectosport-ho39793/shared_invite/zt-2w7po7nhy-gp_xXWinX5VARNKQpuzpYQ"
+          class="nav-link px-2"><i class="bi bi-slack"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://discord.gg/yuZhKCbw"
+          class="nav-link px-2"><i class="bi bi-discord"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://www.facebook.com/share/1B4FKLRZ5A/"
+          class="nav-link px-2 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://www.instagram.com/cod_e42?igsh=eWR2eHR5M25kcHBv"
+          class="nav-link px-2"><i class="bi bi-instagram"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://wa.me/message/4ZYZNBXGPAKUH1"
+          class="nav-link px-2"><i class="bi bi-whatsapp"></i></a></li>
     </ul>
-    <p class="text-center text-body-secondary">2024 ~ Creado por Diana Laura Villafán Juárez en el bootcamp de <a href="https://tecnolochicas.mx/">Tecnolochicas Pro💜🩷</a></p>
+    <p class="text-center">2024 ~ Creado por Diana Laura Villafán Juárez en el bootcamp de <br> 👉<a class="link-techpro"
+        href="https://tecnolochicas.mx/">Tecnolochicas Pro</a>🩷</p>
   </footer>
-  
+
   <!-- CDN JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
